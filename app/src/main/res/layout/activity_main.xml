@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/hiker2">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hiker's Watch"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="30sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:padding="16dp" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude:"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:paddingLeft="16dp"
+        android:paddingBottom="4dp"
+        android:id="@+id/latTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude:"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/latTextView"
+        android:paddingLeft="16dp"
+        android:paddingBottom="4dp"
+        android:id="@+id/longTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Altitude:"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/longTextView"
+        android:paddingLeft="16dp"
+        android:paddingBottom="4dp"
+        android:id="@+id/altTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accuracy:"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/altTextView"
+        android:paddingLeft="16dp"
+        android:paddingBottom="4dp"
+        android:id="@+id/accTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/accTextView"
+        android:paddingLeft="16dp"
+        android:text="Address:"
+        android:id="@+id/addTextView"/>
+
+</android.support.constraint.ConstraintLayout>
